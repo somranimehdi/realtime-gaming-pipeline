@@ -61,15 +61,15 @@ To simulate a live environment, I developed a custom Python-based Event Simulato
 
 ### I. Real-Time Dashboard (IRL)
 This video shows the Kibana dashboard refreshing every second. Watch the 'Events Per Region' and 'Live Event Count' charts react instantly to the producer's activity.
-[![Watch the video](https://github.com/user-attachments/assets/99ac4fa1-62c8-4a05-898d-ad21cac41c11)](https://github.com/user-attachments/assets/99ac4fa1-62c8-4a05-898d-ad21cac41c11)
+[![Watch the video](https://img.youtube.com/vi/9g3DMH9RLcY/maxresdefault.jpg)](https://youtu.be/9g3DMH9RLcY)
 
 
 
 
 ### II. Data Pipeline Flow (Terminals)
 This video shows the interaction between the Simulation (left) and the Spark Engine (right). You can see Spark processing micro-batches and committing them to the sink in real-time.
-[![Watch the video](https://github.com/user-attachments/assets/b91732ec-95cb-4d2d-a64a-f05a2769127c)](https://github.com/user-attachments/assets/b91732ec-95cb-4d2d-a64a-f05a2769127c)
 
+[![Watch the video](https://img.youtube.com/vi/_qiy4xC3o54/maxresdefault.jpg)](https://youtu.be/_qiy4xC3o54)
 
 
 
