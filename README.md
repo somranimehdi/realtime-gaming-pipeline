@@ -4,7 +4,7 @@
 ## Introduction
 In the world of competitive gaming, real-time data is the difference between a seamless experience and a system-wide failure. This project implements a production-grade data engineering pipeline designed to ingest, transform, and visualize player telemetry data as it happens. 
 
-By leveraging Apache Kafka for resilient message queuing and Apache Spark Structured Streaming for complex windowed aggregations, the system converts a chaotic stream of raw JSON events into actionable business intelligence within seconds.
+By leveraging Apache Kafka for resilient message queuing and Apache Spark Structured Streaming for windowed aggregations, the system converts a chaotic stream of raw JSON events into actionable business intelligence within seconds.
 
 ---
 
@@ -51,7 +51,7 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,org.ela
 ## Real-Time Data Simulation
 To simulate a live environment, I developed a custom Python-based Event Simulator. This is the engine that allows for real-time data fetching and stress-testing.
 
-* **Dynamic Generation:** Mimics 1,000+ players across regions (NA, EU, ASIA) generating event types like player_join, item_purchase, and enemy_defeated.
+* **Dynamic Generation:** Mimics 100+ players across regions (NA, EU, ASIA) generating event types like player_join, item_purchase, and enemy_defeated.
 * **High-Velocity Ingestion:** Events are injected into the Kafka broker at intervals as low as 100ms to simulate a high-traffic production game server.
 * **Precision Timestamps:** Each event is tagged with an ISO-8601 timestamp at the source, enabling accurate Event-Time Processing within Spark.
 
